@@ -21,9 +21,9 @@ transformed parameters {
 
 model {
   alpha ~ normal(0,1);
-  beta_mileage ~ normal(0,1);
-  beta_vol_engine ~ normal(0, 1);
-  sigma ~ exponential(0.01);
+  beta_mileage ~ lognormal(0,1);
+  beta_vol_engine ~ lognormal(0, 10);
+  sigma ~ exponential(0.001);
   price ~ normal(mu,sigma);
 }
 

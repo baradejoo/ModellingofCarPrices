@@ -10,34 +10,34 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 29> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 8, column 2 to column 13)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 9, column 2 to column 20)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 10, column 2 to column 23)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 11, column 2 to column 24)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 12, column 2 to column 24)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 15, column 2 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 19, column 2 to column 138)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 31, column 2 to column 17)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 32, column 2 to column 18)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 34, column 4 to column 40)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 35, column 4 to column 54)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 33, column 17 to line 36, column 3)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 33, column 2 to line 36, column 3)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 23, column 2 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 24, column 2 to column 29)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 25, column 2 to column 33)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 26, column 2 to column 28)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 27, column 2 to column 27)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 1, column 7 to column 13)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 2, column 9 to column 10)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 2, column 2 to column 20)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 3, column 9 to column 10)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 3, column 2 to column 23)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 4, column 13 to column 14)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 4, column 2 to column 16)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 19, column 9 to column 10)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 31, column 14 to column 15)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_3_fit.stan', line 32, column 15 to column 16)"};
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 8, column 2 to column 13)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 9, column 2 to column 20)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 10, column 2 to column 23)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 11, column 2 to column 24)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 12, column 2 to column 24)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 15, column 2 to column 22)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 19, column 2 to column 138)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 31, column 2 to column 17)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 32, column 2 to column 18)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 34, column 4 to column 40)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 35, column 4 to column 54)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 33, column 17 to line 36, column 3)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 33, column 2 to line 36, column 3)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 23, column 2 to column 22)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 24, column 2 to column 32)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 25, column 2 to column 37)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 26, column 2 to column 29)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 27, column 2 to column 27)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 1, column 7 to column 13)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 2, column 9 to column 10)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 2, column 2 to column 20)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 3, column 9 to column 10)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 3, column 2 to column 23)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 4, column 13 to column 14)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 4, column 2 to column 16)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 19, column 9 to column 10)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 31, column 14 to column 15)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 32, column 15 to column 16)"};
 
 
 
@@ -215,12 +215,13 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
         current_statement__ = 14;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 0, 1));
         current_statement__ = 15;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(beta_mileage, 0, 1));
+        lp_accum__.add(
+          stan::math::lognormal_lpdf<propto__>(beta_mileage, 0, 1));
         current_statement__ = 16;
         lp_accum__.add(
-          stan::math::normal_lpdf<propto__>(beta_vol_engine, 0, 1));
+          stan::math::lognormal_lpdf<propto__>(beta_vol_engine, 0, 10));
         current_statement__ = 17;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.01));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.001));
         current_statement__ = 18;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(price, mu, sigma));
       }

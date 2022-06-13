@@ -10,28 +10,28 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 23> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 8, column 12 to column 23)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 9, column 12 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 10, column 12 to column 32)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 14, column 12 to column 46)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 25, column 20 to column 35)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 26, column 20 to column 36)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 28, column 22 to column 58)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 29, column 22 to column 72)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 27, column 35 to line 30, column 21)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 27, column 20 to line 30, column 21)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 18, column 8 to column 28)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 19, column 8 to column 27)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 20, column 8 to column 34)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 21, column 8 to column 33)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 2, column 4 to column 10)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 3, column 11 to column 12)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 3, column 4 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 4, column 15 to column 16)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 4, column 4 to column 18)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 14, column 19 to column 20)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 25, column 32 to column 33)",
- " (in '/Users/kamilbaradziej/PythonProjects/DataAnalytics/FinalProject/cost_2_fit.stan', line 26, column 33 to column 34)"};
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 8, column 12 to column 23)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 9, column 12 to column 22)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 10, column 12 to column 32)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 14, column 12 to column 46)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 25, column 20 to column 35)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 26, column 20 to column 36)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 28, column 22 to column 58)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 29, column 22 to column 72)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 27, column 35 to line 30, column 21)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 27, column 20 to line 30, column 21)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 18, column 8 to column 28)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 19, column 8 to column 30)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 20, column 8 to column 35)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 21, column 8 to column 33)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 2, column 4 to column 10)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 3, column 11 to column 12)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 3, column 4 to column 22)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 4, column 15 to column 16)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 4, column 4 to column 18)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 14, column 19 to column 20)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 25, column 32 to column 33)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 26, column 33 to column 34)"};
 
 
 
@@ -165,9 +165,9 @@ class cost_2_fit_model final : public model_base_crtp<cost_2_fit_model> {
         current_statement__ = 11;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 0, 1));
         current_statement__ = 12;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(beta, 0, 1));
+        lp_accum__.add(stan::math::lognormal_lpdf<propto__>(beta, 0, 1));
         current_statement__ = 13;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.01));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.001));
         current_statement__ = 14;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(price, mu, sigma));
       }
