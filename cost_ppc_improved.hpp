@@ -11,8 +11,8 @@ stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 12> locations_array__ = 
 {" (found before start of program)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 5, column 12 to column 41)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 6, column 12 to column 43)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 7, column 12 to column 48)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 6, column 12 to column 49)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 7, column 12 to column 58)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 8, column 12 to column 26)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 10, column 14 to column 65)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 9, column 27 to line 11, column 13)",
@@ -146,13 +146,13 @@ class cost_ppc_improved_model final : public model_base_crtp<cost_ppc_improved_m
       } 
       double alpha = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      alpha = stan::math::normal_rng(0, 1, base_rng__);
+      alpha = stan::math::normal_rng(1, 1, base_rng__);
       double beta = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
-      beta = stan::math::lognormal_rng(0, 1, base_rng__);
+      beta = (-0.5 * stan::math::lognormal_rng(-1, 1, base_rng__));
       double sigma = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
-      sigma = stan::math::exponential_rng(0.001, base_rng__);
+      sigma = stan::math::exponential_rng(0.3, base_rng__);
       std::vector<double> price =
          std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
       current_statement__ = 7;
@@ -165,6 +165,8 @@ class cost_ppc_improved_model final : public model_base_crtp<cost_ppc_improved_m
             base_rng__),
           "assigning variable price", stan::model::index_uni(i));
       }
+      current_statement__ = 3;
+      stan::math::check_greater_or_equal(function__, "sigma", sigma, 0);
       out__.write(alpha);
       out__.write(beta);
       out__.write(sigma);
