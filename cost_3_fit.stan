@@ -8,22 +8,18 @@ parameters {
   real alpha;
   real beta_mileage;
   real beta_vol_engine;
-  real beta_vol_engine2;
-  real beta_vol_engine3;
-
-
   real<lower=0> sigma;
 }
 
 transformed parameters {
-  vector[N] mu = mileage*beta_mileage+vol_engine*beta_vol_engine+(vol_engine^2)*beta_vol_engine2+ +(vol_engine^3)*beta_vol_engine3 +alpha;
+  vector[N] mu = mileage*(-0.5*beta_mileage)+vol_engine*(-0.5*beta_vol_engine)+alpha;
 }
 
 model {
-  alpha ~ normal(0,1);
-  beta_mileage ~ lognormal(0,1);
-  beta_vol_engine ~ lognormal(0, 10);
-  sigma ~ exponential(0.001);
+  alpha ~ normal(1.5,1);
+  beta_mileage ~ lognormal(-1,1);
+  beta_vol_engine ~ lognormal(-1, 1);
+  sigma ~ exponential(0.5);
   price ~ normal(mu,sigma);
 }
 

@@ -8,26 +8,24 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 29> locations_array__ = 
+static constexpr std::array<const char*, 27> locations_array__ = 
 {" (found before start of program)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 8, column 2 to column 13)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 9, column 2 to column 20)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 10, column 2 to column 23)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 11, column 2 to column 24)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 12, column 2 to column 24)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 15, column 2 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 19, column 2 to column 138)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 31, column 2 to column 17)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 32, column 2 to column 18)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 34, column 4 to column 40)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 35, column 4 to column 54)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 33, column 17 to line 36, column 3)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 33, column 2 to line 36, column 3)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 23, column 2 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 24, column 2 to column 32)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 25, column 2 to column 37)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 26, column 2 to column 29)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 27, column 2 to column 27)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 11, column 2 to column 22)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 15, column 2 to column 85)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 27, column 2 to column 17)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 28, column 2 to column 18)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 30, column 4 to column 40)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 31, column 4 to column 54)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 29, column 17 to line 32, column 3)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 29, column 2 to line 32, column 3)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 19, column 2 to column 24)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 20, column 2 to column 33)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 21, column 2 to column 37)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 22, column 2 to column 27)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 23, column 2 to column 27)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 1, column 7 to column 13)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 2, column 9 to column 10)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 2, column 2 to column 20)",
@@ -35,9 +33,9 @@ static constexpr std::array<const char*, 29> locations_array__ =
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 3, column 2 to column 23)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 4, column 13 to column 14)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 4, column 2 to column 16)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 19, column 9 to column 10)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 31, column 14 to column 15)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 32, column 15 to column 16)"};
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 15, column 9 to column 10)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 27, column 14 to column 15)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_3_fit.stan', line 28, column 15 to column 16)"};
 
 
 
@@ -77,17 +75,17 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      current_statement__ = 19;
+      current_statement__ = 17;
       context__.validate_dims("data initialization","N","int",
            std::vector<size_t>{});
       N = std::numeric_limits<int>::min();
       
       
-      current_statement__ = 19;
+      current_statement__ = 17;
       N = context__.vals_i("N")[(1 - 1)];
-      current_statement__ = 20;
+      current_statement__ = 18;
       stan::math::validate_non_negative_index("mileage", "N", N);
-      current_statement__ = 21;
+      current_statement__ = 19;
       context__.validate_dims("data initialization","mileage","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       mileage__ = 
@@ -98,22 +96,22 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
       
       {
         std::vector<local_scalar_t__> mileage_flat__;
-        current_statement__ = 21;
+        current_statement__ = 19;
         mileage_flat__ = context__.vals_r("mileage");
-        current_statement__ = 21;
+        current_statement__ = 19;
         pos__ = 1;
-        current_statement__ = 21;
+        current_statement__ = 19;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 21;
+          current_statement__ = 19;
           stan::model::assign(mileage, mileage_flat__[(pos__ - 1)],
             "assigning variable mileage", stan::model::index_uni(sym1__));
-          current_statement__ = 21;
+          current_statement__ = 19;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 22;
+      current_statement__ = 20;
       stan::math::validate_non_negative_index("vol_engine", "N", N);
-      current_statement__ = 23;
+      current_statement__ = 21;
       context__.validate_dims("data initialization","vol_engine","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       vol_engine__ = 
@@ -124,40 +122,40 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
       
       {
         std::vector<local_scalar_t__> vol_engine_flat__;
-        current_statement__ = 23;
+        current_statement__ = 21;
         vol_engine_flat__ = context__.vals_r("vol_engine");
-        current_statement__ = 23;
+        current_statement__ = 21;
         pos__ = 1;
-        current_statement__ = 23;
+        current_statement__ = 21;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 23;
+          current_statement__ = 21;
           stan::model::assign(vol_engine, vol_engine_flat__[(pos__ - 1)],
             "assigning variable vol_engine", stan::model::index_uni(sym1__));
-          current_statement__ = 23;
+          current_statement__ = 21;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 24;
+      current_statement__ = 22;
       stan::math::validate_non_negative_index("price", "N", N);
-      current_statement__ = 25;
+      current_statement__ = 23;
       context__.validate_dims("data initialization","price","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       price = 
         std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 25;
+      current_statement__ = 23;
       price = context__.vals_r("price");
-      current_statement__ = 26;
+      current_statement__ = 24;
       stan::math::validate_non_negative_index("mu", "N", N);
-      current_statement__ = 27;
+      current_statement__ = 25;
       stan::math::validate_non_negative_index("prices", "N", N);
-      current_statement__ = 28;
+      current_statement__ = 26;
       stan::math::validate_non_negative_index("log_lik", "N", N);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
-    num_params_r__ = 1 + 1 + 1 + 1 + 1 + 1;
+    num_params_r__ = 1 + 1 + 1 + 1;
     
   }
   
@@ -188,41 +186,31 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
       local_scalar_t__ beta_vol_engine = DUMMY_VAR__;
       current_statement__ = 3;
       beta_vol_engine = in__.template read<local_scalar_t__>();
-      local_scalar_t__ beta_vol_engine2 = DUMMY_VAR__;
-      current_statement__ = 4;
-      beta_vol_engine2 = in__.template read<local_scalar_t__>();
-      local_scalar_t__ beta_vol_engine3 = DUMMY_VAR__;
-      current_statement__ = 5;
-      beta_vol_engine3 = in__.template read<local_scalar_t__>();
       local_scalar_t__ sigma = DUMMY_VAR__;
-      current_statement__ = 6;
+      current_statement__ = 4;
       sigma = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
                 0, lp__);
       Eigen::Matrix<local_scalar_t__, -1, 1> mu =
          Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(N, DUMMY_VAR__);
-      current_statement__ = 7;
+      current_statement__ = 5;
       stan::model::assign(mu,
         stan::math::add(
           stan::math::add(
-            stan::math::add(
-              stan::math::add(stan::math::multiply(mileage, beta_mileage),
-                stan::math::multiply(vol_engine, beta_vol_engine)),
-              stan::math::multiply(stan::math::pow(vol_engine, 2),
-                beta_vol_engine2)),
-            stan::math::multiply(stan::math::pow(vol_engine, 3),
-              beta_vol_engine3)), alpha), "assigning variable mu");
+            stan::math::multiply(mileage, (-0.5 * beta_mileage)),
+            stan::math::multiply(vol_engine, (-0.5 * beta_vol_engine))),
+          alpha), "assigning variable mu");
       {
+        current_statement__ = 12;
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 1.5, 1));
+        current_statement__ = 13;
+        lp_accum__.add(
+          stan::math::lognormal_lpdf<propto__>(beta_mileage, -1, 1));
         current_statement__ = 14;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 0, 1));
+        lp_accum__.add(
+          stan::math::lognormal_lpdf<propto__>(beta_vol_engine, -1, 1));
         current_statement__ = 15;
-        lp_accum__.add(
-          stan::math::lognormal_lpdf<propto__>(beta_mileage, 0, 1));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.5));
         current_statement__ = 16;
-        lp_accum__.add(
-          stan::math::lognormal_lpdf<propto__>(beta_vol_engine, 0, 10));
-        current_statement__ = 17;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.001));
-        current_statement__ = 18;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(price, mu, sigma));
       }
     } catch (const std::exception& e) {
@@ -266,14 +254,8 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
       double beta_vol_engine = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
       beta_vol_engine = in__.template read<local_scalar_t__>();
-      double beta_vol_engine2 = std::numeric_limits<double>::quiet_NaN();
-      current_statement__ = 4;
-      beta_vol_engine2 = in__.template read<local_scalar_t__>();
-      double beta_vol_engine3 = std::numeric_limits<double>::quiet_NaN();
-      current_statement__ = 5;
-      beta_vol_engine3 = in__.template read<local_scalar_t__>();
       double sigma = std::numeric_limits<double>::quiet_NaN();
-      current_statement__ = 6;
+      current_statement__ = 4;
       sigma = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
                 0, lp__);
       Eigen::Matrix<double, -1, 1> mu =
@@ -282,25 +264,19 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
       out__.write(alpha);
       out__.write(beta_mileage);
       out__.write(beta_vol_engine);
-      out__.write(beta_vol_engine2);
-      out__.write(beta_vol_engine3);
       out__.write(sigma);
       if (stan::math::logical_negation((stan::math::primitive_value(
             emit_transformed_parameters__) || stan::math::primitive_value(
             emit_generated_quantities__)))) {
         return ;
       } 
-      current_statement__ = 7;
+      current_statement__ = 5;
       stan::model::assign(mu,
         stan::math::add(
           stan::math::add(
-            stan::math::add(
-              stan::math::add(stan::math::multiply(mileage, beta_mileage),
-                stan::math::multiply(vol_engine, beta_vol_engine)),
-              stan::math::multiply(stan::math::pow(vol_engine, 2),
-                beta_vol_engine2)),
-            stan::math::multiply(stan::math::pow(vol_engine, 3),
-              beta_vol_engine3)), alpha), "assigning variable mu");
+            stan::math::multiply(mileage, (-0.5 * beta_mileage)),
+            stan::math::multiply(vol_engine, (-0.5 * beta_vol_engine))),
+          alpha), "assigning variable mu");
       if (emit_transformed_parameters__) {
         out__.write(mu);
       } 
@@ -311,15 +287,15 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
          std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
       std::vector<double> log_lik =
          std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
-      current_statement__ = 13;
+      current_statement__ = 11;
       for (int i = 1; i <= N; ++i) {
-        current_statement__ = 10;
+        current_statement__ = 8;
         stan::model::assign(prices,
           stan::math::normal_rng(
             stan::model::rvalue(mu, "mu", stan::model::index_uni(i)), sigma,
             base_rng__),
           "assigning variable prices", stan::model::index_uni(i));
-        current_statement__ = 11;
+        current_statement__ = 9;
         stan::model::assign(log_lik,
           stan::math::normal_lpdf<false>(
             stan::model::rvalue(price, "price", stan::model::index_uni(i)),
@@ -357,12 +333,6 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
       local_scalar_t__ beta_vol_engine = DUMMY_VAR__;
       beta_vol_engine = in__.read<local_scalar_t__>();
       out__.write(beta_vol_engine);
-      local_scalar_t__ beta_vol_engine2 = DUMMY_VAR__;
-      beta_vol_engine2 = in__.read<local_scalar_t__>();
-      out__.write(beta_vol_engine2);
-      local_scalar_t__ beta_vol_engine3 = DUMMY_VAR__;
-      beta_vol_engine3 = in__.read<local_scalar_t__>();
-      out__.write(beta_vol_engine3);
       local_scalar_t__ sigma = DUMMY_VAR__;
       sigma = in__.read<local_scalar_t__>();
       out__.write_free_lb(0, sigma);
@@ -374,8 +344,7 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
   inline void get_param_names(std::vector<std::string>& names__) const {
     
     names__ = std::vector<std::string>{"alpha", "beta_mileage",
-      "beta_vol_engine", "beta_vol_engine2", "beta_vol_engine3", "sigma",
-      "mu", "prices", "log_lik"};
+      "beta_vol_engine", "sigma", "mu", "prices", "log_lik"};
     
     } // get_param_names() 
     
@@ -383,8 +352,7 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
     
     dimss__ = std::vector<std::vector<size_t>>{std::vector<size_t>{},
       std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
-      }, std::vector<size_t>{}, std::vector<size_t>{},
-      std::vector<size_t>{static_cast<size_t>(N)},
+      }, std::vector<size_t>{static_cast<size_t>(N)},
       std::vector<size_t>{static_cast<size_t>(N)},
       std::vector<size_t>{static_cast<size_t>(N)}};
     
@@ -399,8 +367,6 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
     param_names__.emplace_back(std::string() + "alpha");
     param_names__.emplace_back(std::string() + "beta_mileage");
     param_names__.emplace_back(std::string() + "beta_vol_engine");
-    param_names__.emplace_back(std::string() + "beta_vol_engine2");
-    param_names__.emplace_back(std::string() + "beta_vol_engine3");
     param_names__.emplace_back(std::string() + "sigma");
     if (emit_transformed_parameters__) {
       for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
@@ -434,8 +400,6 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
     param_names__.emplace_back(std::string() + "alpha");
     param_names__.emplace_back(std::string() + "beta_mileage");
     param_names__.emplace_back(std::string() + "beta_vol_engine");
-    param_names__.emplace_back(std::string() + "beta_vol_engine2");
-    param_names__.emplace_back(std::string() + "beta_vol_engine3");
     param_names__.emplace_back(std::string() + "sigma");
     if (emit_transformed_parameters__) {
       for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
@@ -462,13 +426,13 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_mileage\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_vol_engine\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_vol_engine2\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_vol_engine3\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"prices\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_mileage\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_vol_engine\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"prices\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_mileage\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_vol_engine\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_vol_engine2\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_vol_engine3\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"prices\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_mileage\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_vol_engine\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"prices\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -482,7 +446,7 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
                             const bool emit_generated_quantities = true,
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
-  (((((1 + 1) + 1) + 1) + 1) + 1);
+  (((1 + 1) + 1) + 1);
       const size_t num_transformed = N;
       const size_t num_gen_quantities = 
   (N + N);
@@ -504,7 +468,7 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
                             bool emit_generated_quantities = true,
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
-  (((((1 + 1) + 1) + 1) + 1) + 1);
+  (((1 + 1) + 1) + 1);
       const size_t num_transformed = N;
       const size_t num_gen_quantities = 
   (N + N);
@@ -543,10 +507,9 @@ class cost_3_fit_model final : public model_base_crtp<cost_3_fit_model> {
                               std::vector<int>& params_i,
                               std::vector<double>& vars,
                               std::ostream* pstream__ = nullptr) const {
-     constexpr std::array<const char*, 6> names__{"alpha", "beta_mileage",
-      "beta_vol_engine", "beta_vol_engine2", "beta_vol_engine3", "sigma"};
-      const std::array<Eigen::Index, 6> constrain_param_sizes__{1, 1, 
-       1, 1, 1, 1};
+     constexpr std::array<const char*, 4> names__{"alpha", "beta_mileage",
+      "beta_vol_engine", "sigma"};
+      const std::array<Eigen::Index, 4> constrain_param_sizes__{1, 1, 1, 1};
       const auto num_constrained_params__ = std::accumulate(
         constrain_param_sizes__.begin(), constrain_param_sizes__.end(), 0);
     

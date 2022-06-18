@@ -11,13 +11,13 @@ parameters {
 }
           
 transformed parameters {
-            vector[N] mu = mileage*beta+alpha;
+            vector[N] mu = mileage*(-beta)+alpha;
 }
 
 model {
-        alpha ~ normal(1,1);
-        beta ~ lognormal(0,1);
-        sigma ~ exponential(0.9);
+        alpha ~ normal(0.5,1);
+        beta ~ lognormal(-1,1);
+        sigma ~ exponential(0.5);
         price ~ normal(mu,sigma);
 }
 

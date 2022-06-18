@@ -13,15 +13,15 @@ static constexpr std::array<const char*, 23> locations_array__ =
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 8, column 12 to column 23)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 9, column 12 to column 22)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 10, column 12 to column 32)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 14, column 12 to column 46)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 14, column 12 to column 49)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 25, column 20 to column 35)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 26, column 20 to column 36)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 28, column 22 to column 58)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 29, column 22 to column 72)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 27, column 35 to line 30, column 21)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 27, column 20 to line 30, column 21)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 18, column 8 to column 28)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 19, column 8 to column 30)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 18, column 8 to column 30)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 19, column 8 to column 31)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 20, column 8 to column 33)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 21, column 8 to column 33)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_2_fit.stan', line 2, column 4 to column 10)",
@@ -159,15 +159,15 @@ class cost_2_fit_model final : public model_base_crtp<cost_2_fit_model> {
          Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(N, DUMMY_VAR__);
       current_statement__ = 4;
       stan::model::assign(mu,
-        stan::math::add(stan::math::multiply(mileage, beta), alpha),
+        stan::math::add(stan::math::multiply(mileage, -beta), alpha),
         "assigning variable mu");
       {
         current_statement__ = 11;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 1, 1));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 0.5, 1));
         current_statement__ = 12;
-        lp_accum__.add(stan::math::lognormal_lpdf<propto__>(beta, 0, 1));
+        lp_accum__.add(stan::math::lognormal_lpdf<propto__>(beta, -1, 1));
         current_statement__ = 13;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.9));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.5));
         current_statement__ = 14;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(price, mu, sigma));
       }
@@ -226,7 +226,7 @@ class cost_2_fit_model final : public model_base_crtp<cost_2_fit_model> {
       } 
       current_statement__ = 4;
       stan::model::assign(mu,
-        stan::math::add(stan::math::multiply(mileage, beta), alpha),
+        stan::math::add(stan::math::multiply(mileage, -beta), alpha),
         "assigning variable mu");
       if (emit_transformed_parameters__) {
         out__.write(mu);

@@ -10,7 +10,7 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 12> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 5, column 12 to column 41)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 5, column 12 to column 43)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 6, column 12 to column 49)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 7, column 12 to column 58)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/cost_ppc_improved.stan', line 8, column 12 to column 26)",
@@ -146,13 +146,13 @@ class cost_ppc_improved_model final : public model_base_crtp<cost_ppc_improved_m
       } 
       double alpha = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      alpha = stan::math::normal_rng(1, 1, base_rng__);
+      alpha = stan::math::normal_rng(0.5, 1, base_rng__);
       double beta = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
       beta = (-0.5 * stan::math::lognormal_rng(-1, 1, base_rng__));
       double sigma = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
-      sigma = stan::math::exponential_rng(0.3, base_rng__);
+      sigma = stan::math::exponential_rng(0.5, base_rng__);
       std::vector<double> price =
          std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
       current_statement__ = 7;
