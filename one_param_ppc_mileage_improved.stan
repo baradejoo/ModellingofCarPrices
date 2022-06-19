@@ -4,7 +4,7 @@ data {
 }
 
 generated quantities {
-            real alpha = normal_rng(2,2);
+            real alpha = normal_rng(0.7,0.5);
             real beta = normal_rng(-0.5,0.5);
             real <lower = 0> sigma = exponential_rng(0.3); 
             real price[N];

@@ -20,7 +20,7 @@ static constexpr std::array<const char*, 23> locations_array__ =
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 29, column 8 to column 58)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 27, column 19 to line 30, column 5)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 27, column 4 to line 30, column 5)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 18, column 4 to column 24)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 18, column 4 to column 28)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 19, column 4 to column 28)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 20, column 4 to column 29)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 21, column 4 to column 29)",
@@ -163,7 +163,7 @@ class price_fit_model final : public model_base_crtp<price_fit_model> {
         "assigning variable mu");
       {
         current_statement__ = 11;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 2, 2));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 0.2, 0.5));
         current_statement__ = 12;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(beta, -0.5, 0.5));
         current_statement__ = 13;

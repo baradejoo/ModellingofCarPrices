@@ -10,7 +10,7 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 12> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/one_param_ppc_age.stan', line 7, column 12 to column 43)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/one_param_ppc_age.stan', line 7, column 12 to column 45)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/one_param_ppc_age.stan', line 8, column 12 to column 55)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/one_param_ppc_age.stan', line 9, column 12 to column 58)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/one_param_ppc_age.stan', line 10, column 12 to column 26)",
@@ -146,7 +146,7 @@ class one_param_ppc_age_model final : public model_base_crtp<one_param_ppc_age_m
       } 
       double alpha = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      alpha = stan::math::normal_rng(1, 1.5, base_rng__);
+      alpha = stan::math::normal_rng(0.7, 0.5, base_rng__);
       double beta_car_age = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
       beta_car_age = -stan::math::lognormal_rng(-1.5, 1, base_rng__);
