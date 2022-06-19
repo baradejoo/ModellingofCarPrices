@@ -13,7 +13,7 @@ static constexpr std::array<const char*, 23> locations_array__ =
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 8, column 4 to column 15)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 9, column 4 to column 14)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 10, column 4 to column 24)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 14, column 4 to column 45)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 14, column 4 to column 41)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 25, column 4 to column 19)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 26, column 4 to column 20)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit.stan', line 28, column 8 to column 44)",
@@ -159,7 +159,7 @@ class price_fit_model final : public model_base_crtp<price_fit_model> {
          Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(N, DUMMY_VAR__);
       current_statement__ = 4;
       stan::model::assign(mu,
-        stan::math::add(stan::math::multiply(mileage, (-0.5 * beta)), alpha),
+        stan::math::add(stan::math::multiply(mileage, -beta), alpha),
         "assigning variable mu");
       {
         current_statement__ = 11;
@@ -226,7 +226,7 @@ class price_fit_model final : public model_base_crtp<price_fit_model> {
       } 
       current_statement__ = 4;
       stan::model::assign(mu,
-        stan::math::add(stan::math::multiply(mileage, (-0.5 * beta)), alpha),
+        stan::math::add(stan::math::multiply(mileage, -beta), alpha),
         "assigning variable mu");
       if (emit_transformed_parameters__) {
         out__.write(mu);

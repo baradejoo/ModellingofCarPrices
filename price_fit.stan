@@ -11,7 +11,7 @@ parameters {
 }
           
 transformed parameters {
-    vector[N] mu = mileage*(-0.5*beta)+alpha;
+    vector[N] mu = mileage*(-beta)+alpha;
 }
 
 model {

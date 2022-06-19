@@ -1,26 +1,27 @@
 data { 
     int N;
-    vector[N] mileage;
+    int K; //number of predictions
+    matrix[N,K] X; //design matrix
     vector[N] car_age;
     real price[N];
 }
 
 parameters {
     real alpha;
-    real beta_mileage;
+    vector[K] beta_mileage;
     real beta_car_age;
     real<lower=0> sigma;
 }
 
 transformed parameters {
-    vector[N] mu = mileage*(-0.5*beta_mileage)+car_age*(-0.5*beta_car_age)+alpha;
+    vector[N] mu = X*beta_mileage+car_age*(-beta_car_age)+alpha;
 }
 
 model {
-    alpha ~ normal(1.5,1);
-    beta_mileage ~ lognormal(-1,1);
+    alpha ~ normal(0,1);
     beta_car_age ~ lognormal(-1, 1);
-    sigma ~ exponential(0.5);
+    beta_mileage ~ normal(0,1);
+    sigma ~ exponential(0.1);
     price ~ normal(mu,sigma);
 }
 

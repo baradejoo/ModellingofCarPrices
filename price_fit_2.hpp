@@ -8,34 +8,37 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 27> locations_array__ = 
+static constexpr std::array<const char*, 30> locations_array__ = 
 {" (found before start of program)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 9, column 4 to column 15)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 10, column 4 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 11, column 4 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 12, column 4 to column 24)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 16, column 4 to column 81)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 28, column 4 to column 19)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 29, column 4 to column 20)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 31, column 8 to column 44)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 32, column 8 to column 58)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 30, column 19 to line 33, column 5)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 30, column 4 to line 33, column 5)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 20, column 4 to column 26)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 21, column 4 to column 35)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 10, column 4 to column 15)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 11, column 4 to column 27)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 12, column 4 to column 22)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 13, column 4 to column 24)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 17, column 4 to column 64)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 29, column 4 to column 19)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 30, column 4 to column 20)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 32, column 8 to column 44)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 33, column 8 to column 58)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 31, column 19 to line 34, column 5)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 31, column 4 to line 34, column 5)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 21, column 4 to column 24)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 22, column 4 to column 36)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 23, column 4 to column 29)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 23, column 4 to column 31)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 24, column 4 to column 29)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 25, column 4 to column 29)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 2, column 4 to column 10)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 3, column 11 to column 12)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 3, column 4 to column 22)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 3, column 4 to column 10)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 4, column 11 to column 12)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 4, column 4 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 5, column 15 to column 16)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 5, column 4 to column 18)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 16, column 11 to column 12)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 28, column 16 to column 17)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 29, column 17 to column 18)"};
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 4, column 13 to column 14)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 4, column 4 to column 18)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 5, column 11 to column 12)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 5, column 4 to column 22)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 6, column 15 to column 16)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 6, column 4 to column 18)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 11, column 11 to column 12)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 17, column 11 to column 12)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 29, column 16 to column 17)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 30, column 17 to column 18)"};
 
 
 
@@ -44,10 +47,11 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
 
  private:
   int N;
-  Eigen::Matrix<double, -1, 1> mileage__;
+  int K;
+  Eigen::Matrix<double, -1, -1> X__;
   Eigen::Matrix<double, -1, 1> car_age__;
   std::vector<double> price; 
-  Eigen::Map<Eigen::Matrix<double, -1, 1>> mileage{nullptr, 0};
+  Eigen::Map<Eigen::Matrix<double, -1, -1>> X{nullptr, 0, 0};
   Eigen::Map<Eigen::Matrix<double, -1, 1>> car_age{nullptr, 0};
  
  public:
@@ -84,34 +88,48 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       current_statement__ = 17;
       N = context__.vals_i("N")[(1 - 1)];
       current_statement__ = 18;
-      stan::math::validate_non_negative_index("mileage", "N", N);
+      context__.validate_dims("data initialization","K","int",
+           std::vector<size_t>{});
+      K = std::numeric_limits<int>::min();
+      
+      
+      current_statement__ = 18;
+      K = context__.vals_i("K")[(1 - 1)];
       current_statement__ = 19;
-      context__.validate_dims("data initialization","mileage","double",
-           std::vector<size_t>{static_cast<size_t>(N)});
-      mileage__ = 
-        Eigen::Matrix<double, -1, 1>::Constant(N,
+      stan::math::validate_non_negative_index("X", "N", N);
+      current_statement__ = 20;
+      stan::math::validate_non_negative_index("X", "K", K);
+      current_statement__ = 21;
+      context__.validate_dims("data initialization","X","double",
+           std::vector<size_t>{static_cast<size_t>(N),
+            static_cast<size_t>(K)});
+      X__ = 
+        Eigen::Matrix<double, -1, -1>::Constant(N, K,
           std::numeric_limits<double>::quiet_NaN());
-      new (&mileage) Eigen::Map<Eigen::Matrix<double, -1, 1>>(mileage__.data(), N);
-        
+      new (&X) Eigen::Map<Eigen::Matrix<double, -1, -1>>(X__.data(), N, K);
       
       {
-        std::vector<local_scalar_t__> mileage_flat__;
-        current_statement__ = 19;
-        mileage_flat__ = context__.vals_r("mileage");
-        current_statement__ = 19;
+        std::vector<local_scalar_t__> X_flat__;
+        current_statement__ = 21;
+        X_flat__ = context__.vals_r("X");
+        current_statement__ = 21;
         pos__ = 1;
-        current_statement__ = 19;
-        for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 19;
-          stan::model::assign(mileage, mileage_flat__[(pos__ - 1)],
-            "assigning variable mileage", stan::model::index_uni(sym1__));
-          current_statement__ = 19;
-          pos__ = (pos__ + 1);
+        current_statement__ = 21;
+        for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
+          current_statement__ = 21;
+          for (int sym2__ = 1; sym2__ <= N; ++sym2__) {
+            current_statement__ = 21;
+            stan::model::assign(X, X_flat__[(pos__ - 1)],
+              "assigning variable X", stan::model::index_uni(sym2__),
+                                        stan::model::index_uni(sym1__));
+            current_statement__ = 21;
+            pos__ = (pos__ + 1);
+          }
         }
       }
-      current_statement__ = 20;
+      current_statement__ = 22;
       stan::math::validate_non_negative_index("car_age", "N", N);
-      current_statement__ = 21;
+      current_statement__ = 23;
       context__.validate_dims("data initialization","car_age","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       car_age__ = 
@@ -122,40 +140,42 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       
       {
         std::vector<local_scalar_t__> car_age_flat__;
-        current_statement__ = 21;
+        current_statement__ = 23;
         car_age_flat__ = context__.vals_r("car_age");
-        current_statement__ = 21;
+        current_statement__ = 23;
         pos__ = 1;
-        current_statement__ = 21;
+        current_statement__ = 23;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 21;
+          current_statement__ = 23;
           stan::model::assign(car_age, car_age_flat__[(pos__ - 1)],
             "assigning variable car_age", stan::model::index_uni(sym1__));
-          current_statement__ = 21;
+          current_statement__ = 23;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 22;
+      current_statement__ = 24;
       stan::math::validate_non_negative_index("price", "N", N);
-      current_statement__ = 23;
+      current_statement__ = 25;
       context__.validate_dims("data initialization","price","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       price = 
         std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 23;
-      price = context__.vals_r("price");
-      current_statement__ = 24;
-      stan::math::validate_non_negative_index("mu", "N", N);
       current_statement__ = 25;
-      stan::math::validate_non_negative_index("prices", "N", N);
+      price = context__.vals_r("price");
       current_statement__ = 26;
+      stan::math::validate_non_negative_index("beta_mileage", "K", K);
+      current_statement__ = 27;
+      stan::math::validate_non_negative_index("mu", "N", N);
+      current_statement__ = 28;
+      stan::math::validate_non_negative_index("prices", "N", N);
+      current_statement__ = 29;
       stan::math::validate_non_negative_index("log_lik", "N", N);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
-    num_params_r__ = 1 + 1 + 1 + 1;
+    num_params_r__ = 1 + K + 1 + 1;
     
   }
   
@@ -180,9 +200,11 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       local_scalar_t__ alpha = DUMMY_VAR__;
       current_statement__ = 1;
       alpha = in__.template read<local_scalar_t__>();
-      local_scalar_t__ beta_mileage = DUMMY_VAR__;
+      Eigen::Matrix<local_scalar_t__, -1, 1> beta_mileage =
+         Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(K, DUMMY_VAR__);
       current_statement__ = 2;
-      beta_mileage = in__.template read<local_scalar_t__>();
+      beta_mileage = in__.template read<
+                       Eigen::Matrix<local_scalar_t__, -1, 1>>(K);
       local_scalar_t__ beta_car_age = DUMMY_VAR__;
       current_statement__ = 3;
       beta_car_age = in__.template read<local_scalar_t__>();
@@ -195,21 +217,19 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       current_statement__ = 5;
       stan::model::assign(mu,
         stan::math::add(
-          stan::math::add(
-            stan::math::multiply(mileage, (-0.5 * beta_mileage)),
-            stan::math::multiply(car_age, (-0.5 * beta_car_age))), alpha),
+          stan::math::add(stan::math::multiply(X, beta_mileage),
+            stan::math::multiply(car_age, -beta_car_age)), alpha),
         "assigning variable mu");
       {
         current_statement__ = 12;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 1.5, 1));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 0, 1));
         current_statement__ = 13;
         lp_accum__.add(
-          stan::math::lognormal_lpdf<propto__>(beta_mileage, -1, 1));
-        current_statement__ = 14;
-        lp_accum__.add(
           stan::math::lognormal_lpdf<propto__>(beta_car_age, -1, 1));
+        current_statement__ = 14;
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(beta_mileage, 0, 1));
         current_statement__ = 15;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.5));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.1));
         current_statement__ = 16;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(price, mu, sigma));
       }
@@ -248,9 +268,12 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       double alpha = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
       alpha = in__.template read<local_scalar_t__>();
-      double beta_mileage = std::numeric_limits<double>::quiet_NaN();
+      Eigen::Matrix<double, -1, 1> beta_mileage =
+         Eigen::Matrix<double, -1, 1>::Constant(K,
+           std::numeric_limits<double>::quiet_NaN());
       current_statement__ = 2;
-      beta_mileage = in__.template read<local_scalar_t__>();
+      beta_mileage = in__.template read<
+                       Eigen::Matrix<local_scalar_t__, -1, 1>>(K);
       double beta_car_age = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
       beta_car_age = in__.template read<local_scalar_t__>();
@@ -273,9 +296,8 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       current_statement__ = 5;
       stan::model::assign(mu,
         stan::math::add(
-          stan::math::add(
-            stan::math::multiply(mileage, (-0.5 * beta_mileage)),
-            stan::math::multiply(car_age, (-0.5 * beta_car_age))), alpha),
+          stan::math::add(stan::math::multiply(X, beta_mileage),
+            stan::math::multiply(car_age, -beta_car_age)), alpha),
         "assigning variable mu");
       if (emit_transformed_parameters__) {
         out__.write(mu);
@@ -327,8 +349,12 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       local_scalar_t__ alpha = DUMMY_VAR__;
       alpha = in__.read<local_scalar_t__>();
       out__.write(alpha);
-      local_scalar_t__ beta_mileage = DUMMY_VAR__;
-      beta_mileage = in__.read<local_scalar_t__>();
+      Eigen::Matrix<local_scalar_t__, -1, 1> beta_mileage =
+         Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(K, DUMMY_VAR__);
+      for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
+        stan::model::assign(beta_mileage, in__.read<local_scalar_t__>(),
+          "assigning variable beta_mileage", stan::model::index_uni(sym1__));
+      }
       out__.write(beta_mileage);
       local_scalar_t__ beta_car_age = DUMMY_VAR__;
       beta_car_age = in__.read<local_scalar_t__>();
@@ -351,8 +377,8 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
   inline void get_dims(std::vector<std::vector<size_t>>& dimss__) const {
     
     dimss__ = std::vector<std::vector<size_t>>{std::vector<size_t>{},
-      std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
-      }, std::vector<size_t>{static_cast<size_t>(N)},
+      std::vector<size_t>{static_cast<size_t>(K)}, std::vector<size_t>{
+      }, std::vector<size_t>{}, std::vector<size_t>{static_cast<size_t>(N)},
       std::vector<size_t>{static_cast<size_t>(N)},
       std::vector<size_t>{static_cast<size_t>(N)}};
     
@@ -365,7 +391,11 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
     final {
     
     param_names__.emplace_back(std::string() + "alpha");
-    param_names__.emplace_back(std::string() + "beta_mileage");
+    for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
+      {
+        param_names__.emplace_back(std::string() + "beta_mileage" + '.' + std::to_string(sym1__));
+      } 
+    }
     param_names__.emplace_back(std::string() + "beta_car_age");
     param_names__.emplace_back(std::string() + "sigma");
     if (emit_transformed_parameters__) {
@@ -398,7 +428,11 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
     final {
     
     param_names__.emplace_back(std::string() + "alpha");
-    param_names__.emplace_back(std::string() + "beta_mileage");
+    for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
+      {
+        param_names__.emplace_back(std::string() + "beta_mileage" + '.' + std::to_string(sym1__));
+      } 
+    }
     param_names__.emplace_back(std::string() + "beta_car_age");
     param_names__.emplace_back(std::string() + "sigma");
     if (emit_transformed_parameters__) {
@@ -426,13 +460,13 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_mileage\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_car_age\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"prices\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_mileage\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"beta_car_age\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"prices\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_mileage\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_car_age\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"prices\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta_mileage\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"beta_car_age\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"prices\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -446,7 +480,7 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
                             const bool emit_generated_quantities = true,
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
-  (((1 + 1) + 1) + 1);
+  (((1 + K) + 1) + 1);
       const size_t num_transformed = N;
       const size_t num_gen_quantities = 
   (N + N);
@@ -468,7 +502,7 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
                             bool emit_generated_quantities = true,
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
-  (((1 + 1) + 1) + 1);
+  (((1 + K) + 1) + 1);
       const size_t num_transformed = N;
       const size_t num_gen_quantities = 
   (N + N);
@@ -509,7 +543,7 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
                               std::ostream* pstream__ = nullptr) const {
      constexpr std::array<const char*, 4> names__{"alpha", "beta_mileage",
       "beta_car_age", "sigma"};
-      const std::array<Eigen::Index, 4> constrain_param_sizes__{1, 1, 1, 1};
+      const std::array<Eigen::Index, 4> constrain_param_sizes__{1, K, 1, 1};
       const auto num_constrained_params__ = std::accumulate(
         constrain_param_sizes__.begin(), constrain_param_sizes__.end(), 0);
     
