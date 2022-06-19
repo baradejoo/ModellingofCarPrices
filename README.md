@@ -40,7 +40,7 @@ Adding columns with:
 
 Adding the seperation of car brands to segments, with the addition of "unknown segment" option.
 
-Due to the COVID-19 pandemic, there has been a significant and disproportionate increase in car prices over the past 2 years (2020-2022). This is a new occurrence that would require a separate analysis, ideally with data from the next 2-3 years.
+Due to the COVID-19 pandemic, there has been a significant and disproportionate increase in car prices over the past 2 years (2020-2022). This is a new occurrence that would require a analysis, ideally with data from the year <2020-the lowest value of the year in our data set>. Additionally, we decided to analyze only segment: F because of very large differences in prices between different segments.
 
 ## **2. Model**
 
