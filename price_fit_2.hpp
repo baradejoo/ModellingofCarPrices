@@ -13,7 +13,7 @@ static constexpr std::array<const char*, 30> locations_array__ =
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 10, column 4 to column 15)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 11, column 4 to column 27)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 12, column 4 to column 22)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 13, column 4 to column 24)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 13, column 4 to column 15)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 17, column 4 to column 64)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 29, column 4 to column 19)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 30, column 4 to column 20)",
@@ -22,9 +22,9 @@ static constexpr std::array<const char*, 30> locations_array__ =
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 31, column 19 to line 34, column 5)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 31, column 4 to line 34, column 5)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 21, column 4 to column 24)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 22, column 4 to column 36)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 22, column 4 to column 38)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 23, column 4 to column 31)",
- " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 24, column 4 to column 29)",
+ " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 24, column 4 to column 30)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 25, column 4 to column 29)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 2, column 4 to column 10)",
  " (in '/Users/kamilbaradziej/PythonProjects/ModellingofCarPrices/price_fit_2.stan', line 3, column 4 to column 10)",
@@ -210,8 +210,7 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       beta_car_age = in__.template read<local_scalar_t__>();
       local_scalar_t__ sigma = DUMMY_VAR__;
       current_statement__ = 4;
-      sigma = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
-                0, lp__);
+      sigma = in__.template read<local_scalar_t__>();
       Eigen::Matrix<local_scalar_t__, -1, 1> mu =
          Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(N, DUMMY_VAR__);
       current_statement__ = 5;
@@ -222,14 +221,14 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
         "assigning variable mu");
       {
         current_statement__ = 12;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 0, 1));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 1, 2));
         current_statement__ = 13;
         lp_accum__.add(
-          stan::math::lognormal_lpdf<propto__>(beta_car_age, -1, 1));
+          stan::math::lognormal_lpdf<propto__>(beta_car_age, -1.5, 1));
         current_statement__ = 14;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(beta_mileage, 0, 1));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(beta_mileage, 1, 2));
         current_statement__ = 15;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.1));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.01));
         current_statement__ = 16;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(price, mu, sigma));
       }
@@ -279,8 +278,7 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       beta_car_age = in__.template read<local_scalar_t__>();
       double sigma = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 4;
-      sigma = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
-                0, lp__);
+      sigma = in__.template read<local_scalar_t__>();
       Eigen::Matrix<double, -1, 1> mu =
          Eigen::Matrix<double, -1, 1>::Constant(N,
            std::numeric_limits<double>::quiet_NaN());
@@ -361,7 +359,7 @@ class price_fit_2_model final : public model_base_crtp<price_fit_2_model> {
       out__.write(beta_car_age);
       local_scalar_t__ sigma = DUMMY_VAR__;
       sigma = in__.read<local_scalar_t__>();
-      out__.write_free_lb(0, sigma);
+      out__.write(sigma);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }

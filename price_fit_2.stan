@@ -10,7 +10,7 @@ parameters {
     real alpha;
     vector[K] beta_mileage;
     real beta_car_age;
-    real<lower=0> sigma;
+    real sigma;
 }
 
 transformed parameters {
@@ -18,10 +18,10 @@ transformed parameters {
 }
 
 model {
-    alpha ~ normal(0,1);
-    beta_car_age ~ lognormal(-1, 1);
-    beta_mileage ~ normal(0,1);
-    sigma ~ exponential(0.1);
+    alpha ~ normal(1,2);
+    beta_car_age ~ lognormal(-1.5, 1);
+    beta_mileage ~ normal(1,2);
+    sigma ~ exponential(0.01);
     price ~ normal(mu,sigma);
 }
 
