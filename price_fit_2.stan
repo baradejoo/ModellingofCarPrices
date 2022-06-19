@@ -18,10 +18,10 @@ transformed parameters {
 }
 
 model {
-    alpha ~ normal(1,2);
+    alpha ~ normal(2,2);
     beta_car_age ~ lognormal(-1.5, 1);
-    beta_mileage ~ normal(1,2);
-    sigma ~ exponential(0.01);
+    beta_mileage ~ normal(-0.5,0.5);
+    sigma ~ exponential(0.2);
     price ~ normal(mu,sigma);
 }
 
